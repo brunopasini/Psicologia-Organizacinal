@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psicologia</title>
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+      <a class="logo" href="#home">
+      </a>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Portfolio Psicologia</a></li>
+          <li>
+            <a onclick="closeMenu()" href="#home">Início</a>
+          </li>
+          <li><a onclick="closeMenu()" href="#about">Projetos</a></li>
+        </ul>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>Portfólio de Psicologia</h4>
+          <h1>Sobre o Estágio</h1>
+        </header>
+        <div class="content">
+          <p>
+            Estudante de Psicologia Noeli Salete Machado, realizado estágio organizacional no Hotel Kindermann, onde foi
+            feito escutas, observações dos colaboradores, dinamicas e ajuda nas entregas de brindes, o estágio foi
+            orientado e supervisinado pelo professor Clayton Zanella e pela orientadora local Andreia.
+
+          </p>
+          <a class="button" onclick="closeMenu()" target="_blank" href="assets/EstagioOrganizacionalNoeli.pdf">Projeto
+            em
+            PDF</a>
+
+        </div>
+      </div>
+      <div class="col-b">
+        <img src="./assets/psicoo.png" alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="title-about">
+      <h1>Projetos</h1>
+    </div>
+    <div class="wrapper">
+      <div class="col-a">
+
+        <header>
+
+          <h2>Presente de Páscoa</h2>
+        </header>
+
+        <div class="content">
+          <p>
+            Preparativos para entrega de presente, colocando cartão nos ovos de pascoa o qual foi entregue aos
+            colaboradores.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="./assets/noeli.png" alt="Doutor feliz segurando prancheta com pacientes" />
+      </div>
+
+    </div>
+
+  </section>
+  <section id="contact">
+    <div class="wrapper">
+      <div class="col-a content">
+        <header>
+          <h2>Bonificação dos Colaboradores</h2>
+          <p>Os colaboradores ficaram muito feliz pela bonificação, acontece todo mês para os colaboradores que não
+            faltam ao trabalho, que não chegam atrasados e que não pegam atestado, um incentivo da empresa para os
+            colaboradores.</p>
+        </header>
+      </div>
+      <div class="col-b">
+        <img src="./assets/bonificacao.png" alt="Homem negro com moletom bege mexendo no celular e sorrindo" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h2>Dia das Mães</h2>
+        </header>
+        <div class="content">
+          <p>
+            Nessa data especial, eu produzi cartões para dar a todas as mães que trabalham no Hotel Kindermann, foi
+            muito gratificante em ver a alegria dos colaboradores em receber um mimo junto com o cartão.
+          </p>
+        </div>
+      </div>
+      <div class="col-b">
+        <img src="./assets/maes.png" alt="Doutor feliz segurando prancheta com pacientes" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+
+    </div>
+
+    <div class="col-b">
+    </div>
+  </footer>
+
+  <a id="backToTopButton" href="#home">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#00856F" />
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+
+  <!-- ScrollReaveal Lib -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
